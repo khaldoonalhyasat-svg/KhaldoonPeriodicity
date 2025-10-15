@@ -22,6 +22,27 @@
 #' print(result)
 #' plot(result)
 #'
+#' @details
+#' The bootstrap procedure uses a permutation test (randomization test),
+#' which randomly reorders the data without replacement. This preserves
+#' the empirical distribution while destroying temporal autocorrelation.
+#' This is the appropriate method for testing periodicity and is exact
+#' under the null hypothesis of exchangeability.
+#'
+#' The test statistic combines three components:
+#' \itemize{
+#'   \item \strong{R (Peak-to-Mean Ratio)}: Measures dominance of strongest peak
+#'   \item \strong{S (Significant Peaks)}: Counts significant spectral peaks
+#'   \item \strong{C (Energy Concentration)}: Measures energy in significant peaks
+#' }
+#'
+#' @references
+#' Good, P. I. (2005). Permutation, Parametric, and Bootstrap Tests of
+#' Hypotheses. 3rd ed. Springer.
+#'
+#' Davison, A. C., & Hinkley, D. V. (1997). Bootstrap Methods and their
+#' Application. Cambridge University Press.
+#'
 #' @export
 #' @importFrom stats na.omit quantile density
 #' @importFrom graphics plot grid barplot hist lines abline legend text

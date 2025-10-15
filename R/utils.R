@@ -68,3 +68,22 @@
     bootstrap_distribution = bootstrap_stats
   ))
 }
+
+
+
+
+#' Sample Random Data
+#'
+#' Generate random white noise data for testing purposes
+#'
+#' @param n Number of observations (default: 100)
+#' @param mean Mean of the noise (default: 0)
+#' @param sd Standard deviation of the noise (default: 1)
+#' @return Numeric vector of white noise
+#' @importFrom stats rnorm
+#' @export
+sample_random_data <- function(n = 100, mean = 0, sd = 1) {
+  stats::rnorm(n, mean = mean, sd = sd)
+}
+
+
