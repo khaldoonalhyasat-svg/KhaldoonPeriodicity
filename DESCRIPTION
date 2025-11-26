@@ -1,6 +1,6 @@
 Package: KhaldoonPeriodicity
 Type: Package
-Title: Khaldoon Periodicity Test for Time Series Data
+Title: Khaldoon Periodicity Test for Detecting Periodic Patterns in Time Series
 Version: 1.0.0
 Authors@R: 
     person("Khaldoon", "Alhyasat", 
@@ -13,8 +13,8 @@ Description: Implements the Khaldoon periodicity test for detecting periodic
     controlling for false discoveries. Suitable for applications in finance,
     biology, climate science, and engineering.
 License: GPL (>= 3)
-URL: https://github.com/khaldoon-alhyasat/khaldoon
-BugReports: https://github.com/khaldoon-alhyasat/khaldoon/issues
+URL: https://github.com/khaldoonalhyasat-svg/KhaldoonPeriodicity
+BugReports: https://github.com/khaldoonalhyasat-svg/KhaldoonPeriodicity/issues
 Depends: R (>= 3.5.0)
 Imports:
     stats,
@@ -26,5 +26,6 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+LazyData: true
 Encoding: UTF-8
 RoxygenNote: 7.3.3
